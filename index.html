@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nahuel Suarez | Desarrollador Full-Stack Senior</title>
+  <meta name="description" content="Portfolio profesional de Nahuel Suarez, Desarrollador Backend y Analista de Datos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon">⬛</span>
+        Nahuel Suarez <span class="logo-accent">WEB</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary nav-cta">Ver CV</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponible para trabajar
+        </div>
+        <h1 class="hero-title">
+          Desarrollador<br />
+          <span class="gradient-text">Backend</span><br />
+          Senior
+        </h1>
+        <p class="hero-desc">
+          Ayudo a empresas y emprendedores a construir aplicaciones web escalables y modernas.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver Mis Proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Años exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div class="stat-divider"></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-img-wrapper">
+          <div class="hero-img-glow"></div>
+          <img src="profile.jpg" alt="Nahuel Suarez- Backend Developer" class="hero-img" />
+          <div class="floating-badge badge-react">
+            <span>⚛</span> React
+          </div>
+          <div class="floating-badge badge-node">
+            <span>🟢</span> Node.js
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="about" id="sobre-mi">
+    <div class="container">
+      <div class="section-label">SOBRE MÍ</div>
+      <div class="about-inner" data-animate="fade-up">
+        <div class="about-text">
+          <h2 class="section-title">
+            Apasionado por el Backend y el <span class="gradient-text">código limpio.</span>
+          </h2>
+          <p class="about-desc">
+            Mi objetivo es aportar valor a través de soluciones técnicas eficientes, enfocándome siempre en el rendimiento, la escalabilidad y la experiencia de usuario.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/nexusram" target="_blank" class="about-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              https://github.com/nexusram
+            </a>
+            <a href="https://www.linkedin.com/in/nahuel-suarez/" target="_blank" class="about-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              https://www.linkedin.com/in/nahuel-suarez/
+            </a>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="value-card">
+            <div class="value-icon">🎯</div>
+            <h3>Resolución de problemas</h3>
+            <p>Enfoque analítico para encontrar soluciones elegantes a desafíos complejos.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">📚</div>
+            <h3>Aprendizaje constante</h3>
+            <p>Siempre actualizado con las últimas tecnologías y mejores prácticas.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">⚡</div>
+            <h3>Alto rendimiento</h3>
+            <p>Código optimizado y arquitecturas que escalan sin comprometer la experiencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="skills" id="habilidades">
+    <div class="container">
+      <div class="section-label">✦ STACK TECNOLÓGICO</div>
+      <h2 class="section-title text-center" data-animate="fade-up">Habilidades Técnicas</h2>
+      <p class="section-sub text-center" data-animate="fade-up">
+        Tecnologías que domino para construir soluciones web escalables, performantes y modernas.
+      </p>
+      <div class="skills-grid" data-animate="fade-up">
+        <div class="skill-card">
+          <div class="skill-icon skill-react">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85-1.03 0-1.87-.85-1.87-1.85 0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47m-2.62 4.39c.34.27.68.52 1 .75.32-.23.66-.48 1-.75.35-.28.69-.57 1.01-.87-.32-.3-.66-.59-1.01-.87-.34-.27-.68-.52-1-.75-.32.23-.66.48-1 .75-.35.28-.69.57-1.01.87.32.3.66.59 1.01.87m-2.99-4.02c.3.06.61.11.93.16l-.31-.52c-.19-.32-.38-.64-.56-.97-.18.45-.34.91-.47 1.36l.41-.03m5.22 4.75c1.59 1.5 2.97 2.08 3.6 1.7.63-.35.82-1.82.31-3.96-.77.15-1.59.27-2.4.36-.48.67-.99 1.31-1.51 1.9M12 6.78c-.19.22-.38.47-.57.72h1.14c-.19-.25-.38-.5-.57-.72m0 10.44c.19-.22.38-.47.57-.72H11.43c.19.25.38.5.57.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.81.09 1.63.21 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.38-1.95-1.93 1.83-3.92 2.79-5.38 1.95-1.47-.84-1.63-3.05-1.01-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1.01-5.63 1.46-.84 3.45.12 5.38 1.95 1.93-1.83 3.92-2.79 5.38-1.95z"/></svg>
+          </div>
+          <span>React</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-node">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339c.082.045.198.045.275 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.052-.19-.137-.242l-8.791-5.072c-.081-.047-.189-.047-.271 0L3.075 6.68c-.087.05-.139.143-.139.242v10.15c0 .097.052.19.139.235l2.409 1.392c1.307.654 2.108-.116 2.108-.891V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.111.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675c-.57-.329-.922-.943-.922-1.604V6.921c0-.661.352-1.275.922-1.603l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.57.329.924.942.924 1.603v10.15c0 .661-.354 1.275-.924 1.604l-8.794 5.076c-.28.164-.599.247-.925.247zm2.718-6.975c-3.853 0-4.655-1.77-4.655-3.254 0-.142.114-.253.257-.253h1.138c.127 0 .233.092.252.218.172 1.161.685 1.748 3.01 1.748 1.851 0 2.638-.419 2.638-1.4 0-.565-.225-.985-3.093-1.267-2.399-.238-3.884-.766-3.884-2.685 0-1.769 1.49-2.822 3.988-2.822 2.806 0 4.193.973 4.368 3.063.006.073-.017.143-.064.196-.047.053-.113.083-.183.083h-1.142c-.12 0-.225-.083-.249-.2-.274-1.212-.94-1.6-2.73-1.6-2.012 0-2.246.701-2.246 1.226 0 .637.277.822 2.997 1.181 2.693.355 3.974.858 3.974 2.756 0 1.907-1.591 3.01-4.366 3.01z"/></svg>
+          </div>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-supabase">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.199 12.79.752 13.87 1.686 13.87h7.659l.123 9.086c.015.986 1.26 1.409 1.874.637l9.262-11.652c.565-.74.012-1.82-.923-1.82h-7.659L11.9 1.036z"/></svg>
+          </div>
+          <span>Supabase</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-css">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-html">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+          </div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-js">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+          </div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-laravel">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M23.642 5.43a.364.364 0 0 1 .014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 0 1-.188.326L9.93 23.949a.316.316 0 0 1-.066.027.29.29 0 0 1-.054.02.368.368 0 0 1-.19 0 .316.316 0 0 1-.067-.027L.837 18.755a.377.377 0 0 1-.189-.326V2.974c0-.036.003-.073.014-.11a.337.337 0 0 1 .014-.073.294.294 0 0 1 .028-.068c.013-.024.03-.047.046-.068a.329.329 0 0 1 .063-.06.26.26 0 0 1 .066-.039L5.43.02a.378.378 0 0 1 .378 0L10.49 2.9h.002a.339.339 0 0 1 .066.04.3.3 0 0 1 .06.059.26.26 0 0 1 .047.069.27.27 0 0 1 .028.068.327.327 0 0 1 .014.11v9.78l3.76-2.166V5.568a.377.377 0 0 1 .188-.326l4.575-2.636a.318.318 0 0 1 .067-.028.415.415 0 0 1 .054-.02.368.368 0 0 1 .19 0 .35.35 0 0 1 .067.027l4.575 2.636a.377.377 0 0 1 .188.326c0 .002 0 .003.001.005z"/></svg>
+          </div>
+          <span>Laravel</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-powerbi">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M6 2h4v20H6zm5 4h4v16h-4zm5 4h4v12h-4z"/></svg>
+          </div>
+          <span>Power BI</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-api">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5V6h14v12zm-1-2H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V6h12v2z"/></svg>
+          </div>
+          <span>REST APIs</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-typescript">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+          </div>
+          <span>TypeScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <div class="section-label">⬡ PORTAFOLIO</div>
+      <h2 class="section-title text-center" data-animate="fade-up">Proyectos Destacados</h2>
+      <p class="section-sub text-center" data-animate="fade-up">
+        Una selección de proyectos que demuestran mi capacidad técnica y atención al detalle.
+      </p>
+      <div class="projects-grid" data-animate="fade-up">
+
+        <!-- Card 1 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="project-ecommerce.png" alt="E-commerce Dashboard" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" id="demo-ecommerce">Demo</a>
+              <a href="#" class="overlay-btn overlay-btn-outline" id="code-ecommerce">Código</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-react">React</span>
+              <span class="tag tag-supabase">Supabase</span>
+            </div>
+            <h3 class="project-title">E-commerce Dashboard</h3>
+            <p class="project-desc">Panel de administración completo para tiendas online. Incluye gestión de inventario en tiempo real, análisis de ventas y autenticación segura.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link" id="demo-ecommerce-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                Demo
+              </a>
+              <a href="#" class="proj-link" id="code-ecommerce-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card project-card--featured">
+          <div class="project-img-wrap">
+            <img src="project-chat.png" alt="Chat en Tiempo Real" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" id="demo-chat">Demo</a>
+              <a href="#" class="overlay-btn overlay-btn-outline" id="code-chat">Código</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-node">Node.js</span>
+              <span class="tag tag-socket">Socket.io</span>
+            </div>
+            <h3 class="project-title project-title--featured">Chat en Tiempo Real</h3>
+            <p class="project-desc">Aplicación de mensajería instantánea con salas privadas y grupales. Implementación de WebSockets para comunicación bidireccional sin latencia.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link" id="demo-chat-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                Demo
+              </a>
+              <a href="#" class="proj-link" id="code-chat-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="project-landing.png" alt="Landing Page Corporativa" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" id="demo-landing">Demo</a>
+              <a href="#" class="overlay-btn overlay-btn-outline" id="code-landing">Código</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS Grid</span>
+            </div>
+            <h3 class="project-title">Landing Page Corporativa</h3>
+            <p class="project-desc">Sitio web totalmente responsive diseñado con CSS Grid y Flexbox. Optimizado para SEO y alta velocidad de carga (Core Web Vitals).</p>
+            <div class="project-links">
+              <a href="#" class="proj-link" id="demo-landing-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                Demo
+              </a>
+              <a href="#" class="proj-link" id="code-landing-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-label">✉ CONTACTO</div>
+      <h2 class="section-title text-center" data-animate="fade-up">Trabajemos Juntos</h2>
+      <p class="section-sub text-center" data-animate="fade-up">
+        ¿Tienes un proyecto en mente? Me encantaría escucharte y ver cómo puedo ayudarte.
+      </p>
+      <div class="contact-inner" data-animate="fade-up">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:nahuelsuarez9797@gmail.com" class="contact-value">nahuelsuarez9797@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/nexusram" target="_blank" class="contact-value">https://github.com/nexusram</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/nahuel-suarez/" target="_blank" class="contact-value">https://www.linkedin.com/in/nahuel-suarez/</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span class="btn-text">Enviar Mensaje</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ ¡Mensaje enviado! Te responderé pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Nahuel Suarez <span class="gradient-text">WEB</span></p>
+      <p class="footer-copy">© 2026. Hecho con ❤️ y mucho ☕</p>
+      <div class="footer-links">
+        <a href="https://github.com/nexusram" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/nahuel-suarez/" target="_blank" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

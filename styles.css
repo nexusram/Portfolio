@@ -371,8 +371,12 @@ body {
   color: var(--text-primary);
   animation: float 4s ease-in-out infinite;
 }
-.badge-react { bottom: 30px; left: -30px; animation-delay: 0s; }
-.badge-node  { top: 40px; right: -30px; animation-delay: 1.5s; }
+.badge-node    { top: -15px; right: 10px; animation-delay: 0s; }
+.badge-php     { top: 50px; left: -40px; animation-delay: 0.5s; }
+.badge-laravel { top: 130px; right: -50px; animation-delay: 1s; }
+.badge-n8n     { top: 210px; left: -45px; animation-delay: 1.5s; }
+.badge-java    { bottom: 50px; right: -40px; animation-delay: 2s; }
+.badge-mysql   { bottom: -15px; left: 20px; animation-delay: 2.5s; }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-8px); }

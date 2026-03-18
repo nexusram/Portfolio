@@ -121,21 +121,36 @@ const formSuccess = document.getElementById('form-success');
 const submitBtn = document.getElementById('submit-btn');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Simulate async send
     const btnText = submitBtn.querySelector('.btn-text');
+    const originalText = btnText.textContent;
     btnText.textContent = 'Enviando...';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      contactForm.reset();
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method || 'POST',
+        body: new FormData(contactForm),
+        headers: {
+            'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        contactForm.reset();
+        formSuccess.classList.add('show');
+        setTimeout(() => formSuccess.classList.remove('show'), 5000);
+      } else {
+        alert("Hubo un problema al enviar tu mensaje. Por favor, intentá de nuevo.");
+      }
+    } catch (error) {
+       alert("Hubo un error de red al intentar enviar el formulario.");
+    } finally {
       submitBtn.disabled = false;
-      btnText.textContent = 'Enviar Mensaje';
-      formSuccess.classList.add('show');
-      setTimeout(() => formSuccess.classList.remove('show'), 4000);
-    }, 1500);
+      btnText.textContent = originalText;
+    }
   });
 }
 

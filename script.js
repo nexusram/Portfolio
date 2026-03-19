@@ -154,6 +154,31 @@ if (contactForm) {
   });
 }
 
+/* ===== COPY EMAIL TO CLIPBOARD ===== */
+const copyEmailBtn = document.getElementById('copy-email-btn');
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('nahuelsuarez9797@gmail.com');
+      const originalText = copyEmailBtn.dataset.originalText || 'nahuelsuarez9797@gmail.com';
+      copyEmailBtn.dataset.originalText = originalText; // Guardamos el texto por si acaso
+      
+      copyEmailBtn.textContent = '¡Copiado! ✅';
+      copyEmailBtn.classList.add('copied');
+      
+      setTimeout(() => {
+        copyEmailBtn.textContent = originalText;
+        copyEmailBtn.classList.remove('copied');
+      }, 2500);
+    } catch (err) {
+      console.error('Error al copiar el texto: ', err);
+      // Fallback básico si falla el portapapeles
+      alert('Tu navegador no permite copiar automáticamente. El correo es nahuelsuarez9797@gmail.com');
+    }
+  });
+}
+
+
 /* ===== SMOOTH ANCHOR SCROLLING (offset for fixed navbar) ===== */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
